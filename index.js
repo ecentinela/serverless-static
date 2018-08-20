@@ -38,7 +38,7 @@ module.exports = class ServerlessStaticServePlugin {
       // "aws:deploy:deploy:uploadArtifacts": actions.sync.bind( null, serverless, static_env ),
       "static:sync:start": actions.sync.bind( this, serverless, static_env ),
       "static:start": actions.sync.bind( this, serverless, static_env ),
-      "deploy:initialize": actions.sync.bind( this, serverless, static_env )
+      "package:initialize": actions.sync.bind( this, serverless, static_env )
     };
 
   }
